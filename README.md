@@ -49,10 +49,6 @@ discount rate, splits).
 **Outputs:** a present-value / catalog valuation, a recoupment timeline, and a
 sensitivity view showing which assumptions drive the result.
 
-> <!-- TODO (only you know these — adjust or delete): the exact outputs your
-> tool produced, any signature feature that set it apart, and the headline
-> number/result that proved the concept. -->
-
 ---
 
 ## The story: AI prototype → production rebuild
@@ -64,8 +60,7 @@ This is the part worth showing in a portfolio.
    number on the screen. The goal wasn't clean code; it was to **de-risk the
    idea** and see whether the model held up against reality.
 
-   > <!-- TODO: what the prototype was built with — e.g. Python + a notebook /
-   > Streamlit / a spreadsheet engine + scripts / JS. One line is enough. -->
+   The prototype was built in **Python**.
 
 2. **Validate.** The prototype proved the concept: the model produced sane,
    useful valuations and the workflow made sense to the people who'd use it.
