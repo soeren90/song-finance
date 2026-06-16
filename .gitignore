@@ -1,0 +1,12 @@
+# Sanitized showcase — never commit real data, royalty exports, or deal terms.
+*.csv
+*.xlsx
+*.db
+*.sqlite
+*.parquet
+data/
+.env
+.env.*
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
