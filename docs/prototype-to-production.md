@@ -5,7 +5,7 @@ right call.
 
 ## Why prototype with AI first
 
-The risky question wasn't "can this be built?" — most things can. It was
+The risky question wasn't "can this be built?" Most things can. It was
 **"does the model actually produce useful, trustworthy valuations against real
 data, and will the people who need it understand the output?"** That's a
 *product* risk, and the cheapest way to retire it is a working artifact, not a
@@ -13,7 +13,7 @@ spec.
 
 AI-assisted development made that artifact cheap and fast: load real-shaped
 data, implement the model, put a number on the screen, iterate on the workflow
-with real feedback. Days, not months — and disposable by design.
+with real feedback. Days, not months, and disposable by design.
 
 ## What a prototype is *for* (and not for)
 
@@ -30,7 +30,7 @@ Keeping them separate is what made the handoff clean.
 ## The handoff
 
 Once the concept was de-risked, a **professional engineering team rebuilt the
-tool for production**. The prototype's value at that point wasn't its code — it
+tool for production**. The prototype's value at that point wasn't its code; it
 was everything it had made concrete:
 
 - a **validated model** the engineers could trust and reimplement,
@@ -43,7 +43,7 @@ specialists build it to last.
 
 ## The takeaway
 
-> The skill on display here isn't writing the production system — it's knowing
+> The skill on display here isn't writing the production system. It's knowing
 > *what to prove before you build it*, proving it cheaply, and handing it off
 > without ego. AI made the proving step nearly free; the judgment about when to
 > stop prototyping and bring in the pros is the part that matters.

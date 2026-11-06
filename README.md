@@ -44,6 +44,36 @@ The domain mechanics any such tool has to get right:
 | **Discounting / present value** | Translating an uncertain future stream into a value *today* |
 | **Scenario & sensitivity** | How the valuation moves when the key assumptions move |
 
+### How the data flows
+
+```mermaid
+flowchart LR
+    subgraph In [Inputs]
+        RD[(Historical royalty data\nby source)]
+        DT[Deal terms\nadvances · splits]
+        AS[Assumptions\ndecay · discount rate]
+    end
+
+    RD --> ST[Royalty streams\nstreaming · sync · mechanical · performance]
+    AS --> DC[Decay / lifecycle curve\nper song or cohort]
+    ST --> DC
+    DC --> PR[Projected gross income]
+    DT --> SP[Splits\ncomposition · recording · collaborators]
+    PR --> SP
+    SP --> NI[Net income per rights holder]
+    DT --> RC[Recoupment walk\nadvance balance period by period]
+    NI --> RC
+    NI --> PV[Discounting\npresent value]
+    AS --> PV
+
+    RC --> O1([Recoupment timeline])
+    PV --> O2([Catalog valuation])
+    PV --> O3([Sensitivity view])
+
+    classDef out fill:#0f766e,stroke:#5eead4,color:#fff;
+    class O1,O2,O3 out;
+```
+
 **Inputs:** historical royalty data + deal terms + assumptions (decay,
 discount rate, splits).
 **Outputs:** a present-value / catalog valuation, a recoupment timeline, and a
